@@ -15,7 +15,7 @@ function QuizForm({ onQuizCreated }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await fetch('http://localhost:5000/api/quiz', {
+      await fetch('http://localhost:5000/api/create_quiz', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
